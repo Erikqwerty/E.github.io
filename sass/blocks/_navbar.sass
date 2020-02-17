@@ -1,0 +1,94 @@
+.navbar 
+    padding-top: 32px
+    display: grid
+    grid-template-columns: 1fr 5fr
+.navbar__logo 
+    grid-column: 1/2
+.logo 
+
+.navbar__menu 
+    justify-self: end
+    align-self: center
+
+.navbar__links 
+    margin-left: 50px
+    font-size: 18px
+    +bold
+    text-decoration: none
+    color: #ffffff
+.navbar__links_mode
+    color: #f84545
+.text-box 
+    width: 100%
+    display: grid
+    justify-content: center
+    margin-top: 250px
+.text-box__h1 
+    font-size: 60px
+    line-height: 70px
+    letter-spacing: 50px
+    color: #ffffff
+
+.text-box__a
+    text-align: center
+    color: #f84545
+    font-size: 30px
+    letter-spacing: 15px
+    line-height: 60px
+    text-decoration: none
+    +bold
+
+.text-box__arrow
+    text-align: center
+    margin-top: 250px
+@media ( max-width:1050px)
+    .text-box__h1
+        font-size: 40px
+        line-height: 40px
+        letter-spacing: 40px
+    
+@media (max-width:950px)
+    .navbar
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+        
+    .navbar__menu 
+        justify-self: center
+        align-self: center
+    .navbar__logo 
+        justify-self: center
+    .text-box__h1 
+        font-size: 30px
+        line-height: 30px
+        letter-spacing: 30px
+    .text-box 
+        justify-content: center
+        margin-top: 150px
+    .text-box__a
+        font-size: 20px
+        letter-spacing: 15px
+        line-height: 20px
+@media ( max-width: 640px)
+    .navbar
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 
+    .navbar__menu 
+        justify-self: center
+        align-self: center
+    .navbar__logo 
+        display: none
+    .navbar__links 
+        margin-left: 30px
+        font-size: 14px
+ 
+
+@media ( max-width: 510px)
+    .text-box__h1 
+        display: none
+    .text-box
+        justify-content: center
+        margin-top: 200px
+@media (max-width: 420px)
+    .navbar__links
+        margin-left: 20px
+        font-size: 12px

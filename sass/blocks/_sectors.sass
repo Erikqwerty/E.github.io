@@ -1,0 +1,30 @@
+
+.header
+    width: 100%
+    min-height: 950px
+    background-image: url('../img/fon.png')
+    background-size: cover
+    background-position: center center
+@media (max-width:950px)
+    .header
+        min-height: 620px
+
+.main
+    width: 100%
+    padding-top: 0px
+    background: #ffffff
+
+.main h2
+    +light
+    font-weight: 100 !important
+
+
+.footer
+    padding-top: 80px
+    display: grid
+    grid-template-rows: 1fr 0fr
+    grid-template-columns: 1fr
+
+@media ( max-width: 640px)
+    .footer
+        padding-top: 20px

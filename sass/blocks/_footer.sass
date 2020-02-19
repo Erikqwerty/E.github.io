@@ -17,11 +17,11 @@
     grid-template-columns: repeat( 4 ,1fr )
     grid-template-rows: 1fr 1fr
     min-height: 850px
-.footer__blackaut
+.footer__img div
     width: 100%
     height: 100%
     background-color: rgba(26, 26, 26,0.7)
-.footer__blackaut:hover
+.footer__img div:hover
     transition: 0.7s
     background-color: rgba(26, 26, 26,0)
     opacity: 0
@@ -53,20 +53,21 @@
 .footer__img_8 
     background-image: url('../img/Layer 15.png')
 
-.footer__text-box
-
-
-.footer__text 
+.footer__text-box p
     text-align: center
     color: #ffffff
     font-size: 40pt
     letter-spacing: 20px
 
-.footer__p-1 
+.footer__text-box a
+    padding-top: 5px
     letter-spacing: 20px
     font-size: 30pt
     text-align: center
+    display: block
+    justify-self: center
     color: #f84545
+    text-decoration: none
 
 
 .footer__box-2 
@@ -75,22 +76,20 @@
     padding-top: 30px
     padding-bottom: 30px
 
-.footer__menu 
-
-
-.footer__link 
+.footer__menu a
     align-self: center
     color: #1a1a1a
     text-decoration: none
     font-size: 18px
     padding-left: 40px
-.footer__link:hover
+.footer__menu a:hover
     transition: 0.5s
     color: #f84545
 
 .footer__contact 
-    padding-left: 40px
+    
     justify-self: end
+    align-items: center
 
 .footer__contact a
     align-self: center
@@ -109,29 +108,39 @@
         justify-self: center
     .footer__menu
         text-align: center
-    .footer__link 
+    .footer__menu a 
         padding-left: 20px
     .footer__box-1 
         min-height: 600px
            
 @media ( max-width: 700px)
-    .footer__text 
+    .footer__text-box p
         font-size: 30pt
-    .footer__p-1 
+    .footer__text-box a
         font-size: 20pt
-    .footer__link 
+    .footer__menu a
         font-size: 10pt
     .footer__box-1 
         min-height: 500px
 @media ( max-width: 640px)
-    .footer__link 
+    .footer__menu a
         font-size: 8pt
         padding-left: 10px
-    .footer__text 
+    .footer__text-box p
         font-size: 20pt
-    .footer__p-1 
+    .footer__text-box a
         font-size: 10pt
     .footer__box-1
         min-height: 350px
     .footer__link_mode
+        display: none
+@media ( max-width: 360px)
+    .footer__text-box p
+        font-size: 14pt
+        letter-spacing: 12px
+    .footer__text-box a
+        letter-spacing: 10px
+
+@media ( max-width: 320px)
+    .HID320
         display: none
